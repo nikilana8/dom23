@@ -1,0 +1,16 @@
+<div class="container pt-4">
+  <h3 class="text-center mb-5 pt-5 mt-4 fw-bold fs-2">Наши чайные коллекции</h3>
+  <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+    <div class="col" *ngFor="let tea of teas">
+      <div class="card h-100">
+        <div class="mb-1 test-popup-link">
+          <img class="bd-placeholder-img card-img-top" src="{{tea.image}}" alt="Image">
+        </div>
+        <div class="card-body px-4 d-flex flex-column justify-content-center">
+          <h5 class="text-center card-title mb-2">{{tea.title}}</h5>
+          <a class="btn btn-primary px-lg-5 my-1" [routerLink]="['/products', tea.id]">Подробнее</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

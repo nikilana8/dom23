@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 mx-auto text-center">
+      <img src="{{product.image}}" alt="Image" class="bd-placeholder-img card-img-top center-block">
+      <h1>{{product.title}}</h1>
+      <p>{{product.description}}</p>
+      <p>Цена: {{product.price}} руб.</p>
+      <a class="btn btn-primary px-lg-5 my-1 mb-5" routerLink="/order" [queryParams]="{product: product.title}">В корзину</a>
+    </div>
+  </div>
+</div>
